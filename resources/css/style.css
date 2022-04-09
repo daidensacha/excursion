@@ -1,3 +1,18 @@
+/*
+This project completed as part of the Codecademy Git/Github course/
+Used Flexbox for the layout as a simple alternative to using a CSS frameowrk
+such as Bootstrap.
+*/
+
+:root {
+  --black: #000000;
+  --cod-gray: #0e0e0e;
+  --white: #ffffff;
+  --gray: #808080;
+  --aqua-marine: #80ffd4;
+
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,13 +21,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0e0e0e;
+  background-color: var(--cod-gray);
 }
 
 .main-container {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 main, section.travel, footer {
@@ -22,25 +37,22 @@ main, section.travel, footer {
 }
 
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
   font-size: 50px;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 
 h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 42px;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 21px;
-  color: gray;
+  color: var(--gray);
   text-align: center;
 }
 
@@ -50,8 +62,7 @@ p#copyright {
 }
 
 a {
-  color: aquamarine;
-  font-family: Verdana, Geneva, Tahoma, sans-seriffont;
+  color: #80ffd4;
   font-size: 16px;
   display: flex;
   justify-content: center;
